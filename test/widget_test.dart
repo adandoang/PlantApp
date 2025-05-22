@@ -8,7 +8,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_test/flutter_test.dart';
 
-import 'package:plantapp/main.dart';
 import 'package:plantapp/screens/home/home_screen.dart';
 
 void main() {
