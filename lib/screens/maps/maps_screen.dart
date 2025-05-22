@@ -1,12 +1,12 @@
 import 'package:flutter/material.dart';
 import 'components/body.dart';
 
-class DetailsScreen extends StatelessWidget {
-  const DetailsScreen({super.key});
+class MapsScreen extends StatelessWidget {
+  const MapsScreen({super.key});
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
+    return const Scaffold(
       body: Body(),
     );
   }

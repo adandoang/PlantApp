@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
+import 'package:plantapp/screens/maps/maps_screen.dart';
 
 import '../../../constants.dart';
 
@@ -40,7 +41,17 @@ class HeaderWithSearchBox extends StatelessWidget {
                       color: Colors.white, fontWeight: FontWeight.bold),
                 ),
                 Spacer(),
-                Image.asset("assets/images/logo.png")
+                GestureDetector(
+                  onTap: () {
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                        builder: (context) => const MapsScreen(),
+                      ),
+                    );
+                  },
+                  child: Image.asset("assets/images/logo.png"),
+                )
               ],
             ),
           ),
