@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:plantapp/screens/home/components/featured_plants.dart';
 
 import 'package:plantapp/screens/home/components/header_with_searchbox.dart';
 import 'package:plantapp/screens/home/components/recomend_plants.dart';
@@ -19,6 +20,7 @@ class Body extends StatelessWidget {
           TitleWithMoreBtn(title: "Recomended", press: () {}),
           RecomendsPlants(),
           TitleWithMoreBtn(title: "Featured Plants", press: () {}),
+          FeaturedPlants(),
           SizedBox(height: kDefaultPadding),
         ],
       ),
