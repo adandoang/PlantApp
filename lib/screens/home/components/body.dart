@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:plantapp/screens/home/components/header_with_searchbox.dart';
 import 'package:plantapp/screens/home/components/recomend_plants.dart';
 import 'package:plantapp/screens/home/components/title_with_more_button.dart';
+import '../../../constants.dart';
 
 class Body extends StatelessWidget {
   @override
@@ -18,6 +19,7 @@ class Body extends StatelessWidget {
           TitleWithMoreBtn(title: "Recomended", press: () {}),
           RecomendsPlants(),
           TitleWithMoreBtn(title: "Featured Plants", press: () {}),
+          SizedBox(height: kDefaultPadding),
         ],
       ),
     );
